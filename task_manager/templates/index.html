@@ -13,19 +13,19 @@
     <script src="https://kit.fontawesome.com/4f6db0661c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<section class="header">
+<section class="header" id="header">
 <!-- <nav> -->
         <nav>
             <!-- <div class="container"> -->
-                    <a href="index.html"><img src="/task_manager/static/images/Todos_logo3.drawio.png" alt="logo"></a>
+                    <a href="#header"><img src="/task_manager/static/images/Todos_logo3.drawio.png" alt="logo"></a>
         <div class="nav-links">
             <i class="fa-solid fa-circle-xmark fa-xl"></i>
             <ul>
-                <li><a class="xl" href="index.html">HOME</a></li>
-                <li><a class="xl" href="#">ABOUT</a></li>
-                <li><a  href="#">CONTACT</a></li>
-                <li><a class="btn-light" href="#">LOGIN</a></li>
-                <li><a href="#">SIGNUP</a></li>
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#demo">DEMO</a></li>
+                <li><a href="#our-story">OUR STORY</a></li>
+                <li><a href="#about-us">ABOUT US</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
         <!-- Hamburger Button -->
@@ -50,15 +50,15 @@
 
 <!-- Hero -->
 <div class="text-box">
-    <div class="container">
         <!-- <div class="img-content">
             <img src="/task_manager/static/images/bground.png" alt="background image">
         </div> -->
                 <div class="text-content">
-                    <h1 class="hero-heading text-xxl">
+                    <div class="text-row">
+                    <h1>
                         The best way to manage your task is <br> to ace them!<br>
                     </h1>
-                    <p class="hero-text text-xl">
+                    <p>
                        <br> Todos is a task managing application that lets you manage,
                         organize and take charge of your task. <br>It is easy to use with a
                         responsive and attractive web interface.
@@ -66,12 +66,9 @@
                     </p>
                     <a href="" class="hero-btn"> Get Started</a>
                     </div>
-                    
-            <!-- <div class="hero-buttons">
-                <a href="#" class="btn btn-primary">Get Started</a>
-                <a href="#" class="btn"><i class="fas fa-laptop"></i> Book a Demo</a>
-            </div> -->
-        </div>
+                    <div class="text-row">
+                        <img src="/task_manager/static/images/bground.png" alt="background image">
+                    </div>
     </div>
 </section>
 
@@ -88,14 +85,14 @@
 </section>
 
 
-    <!-- course -->
+    <!-- features -->
 
-<section class="course">
-    <h1>Key Features</h1>
+<section class="features">
+    <h1 id="features">Key Features</h1>
     <p>Unlock the power of task management with these powerful features, designed to keep you organized and boost your productivity.</p>
 
     <div class="row">
-        <div class="course-col">
+        <div class="features-col">
             <h3>Prioritize Like a Pro</h3>
             <img src="/task_manager/static/images/priority.png" alt="task decomposition icon">
             <p>
@@ -103,7 +100,7 @@
                 stay focused on what matters most.
             </p>
         </div>
-        <div class="course-col">
+        <div class="features-col">
             <h3>Smart Task Scheduling</h3>
             <img src="/task_manager/static/images/planning.png" alt="">
             <p>
@@ -111,7 +108,7 @@
                 reminders to ensure you never miss a deadline.
             </p>
         </div>
-        <div class="course-col">
+        <div class="features-col">
             <h3>Effortless Task Breakdown</h3>
             <img src="/task_manager/static/images/Task-decomposition_icon.png" alt="">
             <p>
@@ -124,7 +121,7 @@
 
 
 <!-- Campus -->
- <section class="">
+ <section class="campus">
     <h1>Who We Serve</h1>
     <p>From students to everyday individuals and students to busy professionals, our app is designed to meet the needs of a diverse range of users.
     We help people in various fields achieve more.</p>
@@ -157,8 +154,8 @@
 
  </section>
 
-<!-- Facilities -->
- <section class="facilities">
+<!-- choose-us -->
+ <section class="choose-us">
     <h1>Why Choose Us?</h1>
     <p>Discover the key benefits that have made thousands of users worldwide trust us for their day-to-day tasks:</p>
 
@@ -234,7 +231,7 @@
    <!-- Footer -->
 
 <section class="footer">
-<h4>About Us</h4>
+<h4 id="about-us">About Us</h4>
 <p>At Todos, we are passionate about helping you stay organized and productive. Our team
 is dedicated to creating a user-friendly tool that simplifies task management and enhances productivity. Whether you are
 a busy professional, a student juggling multiple projects, or anyone looking to stay on top of your tasks, Todos is
@@ -248,11 +245,6 @@ designed with you in mind.</p>
 </div>
 <p>Made with  <i class="fa-sharp fa-solid fa-heart">  by  Etta</i</p>
 </section>
-
-
-
-
-
 
 
 
