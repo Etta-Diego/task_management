@@ -3,36 +3,282 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/task_manager/static/css/style.css">
+    <title>Task Manager Website</title>
+    <link rel="shortcut icon" href="/task_manager/static/images/logo.png" type="images/x-icon"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/task_manager/static/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4f6db0661c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-      <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a id="login"  href="#login" class="login-link">Log In</a>
-        <a id="signup"  href="#signup" class="login-link">SignUp</a>
-      </div>    
-    </header>
-    <div class="content-container">
-        <div class="text-section">
-          <h2>The best way to manage your task is to ace them!</h2>
-          <div class="intro">
-            <h4>
-              Todos is a task managing application that lets you manage,
-              organize and take charge of your task. It is easy to use with a
-              responsive and attractive web interface.
-              So go ahead and own your task, own success!
-            </h4>
-          </div>
+<section class="header">
+<!-- <nav> -->
+        <nav>
+            <!-- <div class="container"> -->
+                    <a href="index.html"><img src="/task_manager/static/images/Todos_logo3.drawio.png" alt="logo"></a>
+        <div class="nav-links">
+            <i class="fa-solid fa-circle-xmark fa-xl"></i>
+            <ul>
+                <li><a class="xl" href="index.html">HOME</a></li>
+                <li><a class="xl" href="#">ABOUT</a></li>
+                <li><a  href="#">CONTACT</a></li>
+                <li><a class="btn-light" href="#">LOGIN</a></li>
+                <li><a href="#">SIGNUP</a></li>
+            </ul>
         </div>
-        <div class="image-section">
-          <img src="/task_manager/static/images/bground.png" alt="" width="750" height="350">
+        <!-- Hamburger Button -->
+        <!-- <button class="hamburger-button">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </button>
+        <div class="mobile-menu">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">LOGIN</a></li>
+                    <li><a href="#">GET STARTED</a></li>
+                </ul>
+        </div> -->
+    </div>
+    <i class="fa-solid fa-grid fa-2xl"></i>
+</nav>
+
+
+<!-- Hero -->
+<div class="text-box">
+    <div class="container">
+        <!-- <div class="img-content">
+            <img src="/task_manager/static/images/bground.png" alt="background image">
+        </div> -->
+                <div class="text-content">
+                    <h1 class="hero-heading text-xxl">
+                        The best way to manage your task is <br> to ace them!<br>
+                    </h1>
+                    <p class="hero-text text-xl">
+                       <br> Todos is a task managing application that lets you manage,
+                        organize and take charge of your task. <br>It is easy to use with a
+                        responsive and attractive web interface.
+                       <br> So go ahead and own your task, own success
+                    </p>
+                    <a href="" class="hero-btn"> Get Started</a>
+                    </div>
+                    
+            <!-- <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Get Started</a>
+                <a href="#" class="btn"><i class="fas fa-laptop"></i> Book a Demo</a>
+            </div> -->
         </div>
-      </div>
-      
+    </div>
+</section>
+
+
+<section class="video">
+  <h2 class="video-heading">
+    See how it works and get started in less than 2 minutes
+  </h2> 
+  <div class="video-content">
+    <a href="#"><img src="/task_manager/static/images/bground.png" alt=""></a>
+
+    a.btn
+  </div> 
+</section>
+
+
+    <!-- course -->
+
+<section class="course">
+    <h1>Key Features</h1>
+    <p>Unlock the power of task management with these powerful features, designed to keep you organized and boost your productivity.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Prioritize Like a Pro</h3>
+            <img src="/task_manager/static/images/priority.png" alt="task decomposition icon">
+            <p>
+                Easily prioritize your tasks with our intuitive drag-and-drop interface. Organize tasks by urgency or importance and
+                stay focused on what matters most.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Smart Task Scheduling</h3>
+            <img src="/task_manager/static/images/planning.png" alt="">
+            <p>
+                Schedule tasks seamlessly with our calendar integration. Set due dates, create recurring tasks, and receive timely
+                reminders to ensure you never miss a deadline.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Effortless Task Breakdown</h3>
+            <img src="/task_manager/static/images/Task-decomposition_icon.png" alt="">
+            <p>
+                Break down complex tasks into smaller, manageable steps. Our subtask feature helps you tackle big projects with ease,
+                ensuring steady progress toward your goals.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Campus -->
+ <section class="">
+    <h1>Who We Serve</h1>
+    <p>From students to everyday individuals and students to busy professionals, our app is designed to meet the needs of a diverse range of users.
+    We help people in various fields achieve more.</p>
+
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="/task_manager/static/images/busy student.jpg" alt="smiling emoji">
+            <div class="layer">
+                <h3>STUDENTS</h3>
+            </div>
+        </div>
+
+        <div class="campus-col">
+            <img src="/task_manager/static/images/busy housewife.jpg" alt="smiling emoji">
+            <div class="layer">
+                <h3>EVERYDAY INDIVIDUALS</h3>
+            </div>
+        </div>
+
+            <div class="campus-col">
+                <img src="/task_manager/static/images/busy professionals.jpg" alt="smiling emoji">
+                <div class="layer">
+                    <h3>BUSY PROFESSIONALS</h3>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+ </section>
+
+<!-- Facilities -->
+ <section class="facilities">
+    <h1>Why Choose Us?</h1>
+    <p>Discover the key benefits that have made thousands of users worldwide trust us for their day-to-day tasks:</p>
+
+    <div class="row">
+        <div>
+            <img src="/task_manager/static/images/tick_off.jpg" alt="orange">
+            <h3>Increased Productivity</h3>
+            <p>Accomplish more in less time with our intuitive task management features. Stay organized and focus on what
+            matters.</p>
+        </div>
+        <div>
+            <img src="/task_manager/static/images/time management.jpg" alt="orange">
+            <h3>Better Time Management</h3>
+            <p>Stay on top of your schedule with smart tools that help you plan efficiently.</p>
+        </div>
+        <div>
+            <img src="/task_manager/static/images/relaxing after a day's work.jpg" alt="orange">
+            <h3>Reduced Stress</h3>
+            <p>Simplify your tasks and enjoy peace of mind knowing that everything is under control.</p>
+        </div>
+    </div>
+ </section>
+
+
+
+ <!-- Testimonials -->
+  <section class="testimonials">
+    <h1>What Our Users Says</h1>
+    <p>Lorem ipsum dolor sit amet, consecteur adipiscing elit</p>
+
+    <div class="row">
+        <div class="testimonial-col">
+        <img src="/task_manager/static/images/bground.png" alt="lady holding calender">
+        <div>
+            <p>Query to group admissions by service and calculate both the total and average length of stay for each service, ordered by the highest average length of stay.</p>
+            <h3>Hannah Umeh</h3>
+            <i class="fa-solid fa-star" style="color: #63E6BE;"></i>
+            <i class="fa-solid fa-star" style="color: #63E6BE;"></i>
+            <i class="fa-solid fa-star" style="color: #63E6BE;"></i>
+            <i class="fa-solid fa-star" style="color: #63E6BE;"></i>
+            <i class="fa-regular fa-star" style="color: #63E6BE;"></i>
+        </div>
+    </div>
+
+    <div class="testimonial-col">
+        <img src="/task_manager/static/images/bground.png" alt="lady holding calender">
+        <div>
+            <p>Query to group admissions by service and calculate both the total and average length of stay for each service, ordered by the highest average length of stay.</p>
+            <h3>Christian Grinch</h3>
+            <i class="fa-solid fa-star" style="color: #63E6BE;"></i>
+            <i class="fa-solid fa-star" style="color: #63E6BE;"></i>
+            <i class="fa-solid fa-star" style="color: #63E6BE;"></i>
+            <i class="fa-solid fa-star" style="color: #63E6BE;"></i>
+            <i class="fa-sharp fa-solid fa-star-half-stroke" style="color: #63E6BE;"></i>
+        </div>
+        </div>
+    </div>
+
+  </section>
+
+
+  <!-- Call to Action -->
+   <section class="cta">
+    <div class="cta-item">
+        <h1>Our Reach</h1>
+        <p>With millions of tasks completed worldwide, todos is making a difference for users everywhere. <br> Be part of our growing community that values productivity and success.</p>
+    <!-- <a href="" class="hero-btn">CONTACT US</a> -->
+    </div>
+   </section>
+
+
+
+   <!-- Footer -->
+
+<section class="footer">
+<h4>About Us</h4>
+<p>At Todos, we are passionate about helping you stay organized and productive. Our team
+is dedicated to creating a user-friendly tool that simplifies task management and enhances productivity. Whether you are
+a busy professional, a student juggling multiple projects, or anyone looking to stay on top of your tasks, Todos is
+designed with you in mind.</p>
+<a class="hero-btn" href="#">LEARN MORE ABOUT US</a>
+<div class="icons">
+<i class="fa-sharp fa-solid fa-circle-x"></i>
+<i class="fa-sharp fa-solid fa-circle-x"></i>
+<i class="fa-sharp fa-solid fa-circle-x"></i>
+<i class="fa-sharp fa-solid fa-circle-x"></i>
+</div>
+<p>Made with  <i class="fa-sharp fa-solid fa-heart">  by  Etta</i</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- JavaScript for Toggle Menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
 </body>
 </html>

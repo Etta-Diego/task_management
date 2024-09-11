@@ -27,7 +27,7 @@ html, body {
 
 body {
     /* animation: backgroundTransition 20s infinite; */
-    background-color: #af7c0f;
+    background-color: rgb(175, 124, 15);
     /* max-width: calc(100% - 100px); */
     margin: 0;
     height: auto;
