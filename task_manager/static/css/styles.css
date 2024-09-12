@@ -73,8 +73,8 @@ nav img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 70px;
-    margin-top: 100px;
+    padding: 50px 100px;
+    margin-top: 80px;
     /* Add space after the navigation section */
 }
 
@@ -84,7 +84,7 @@ nav img {
 
 /* Move the image a little to the right */
 .text-row:last-child {
-    margin-right: 50px;
+    margin-right: 10px;
 }
 
 /* Move the text a little to the right */
@@ -93,23 +93,30 @@ nav img {
 }
 
 .text-row h1 {
-    font-size: 2.5rem;
+    font-size: 120px;
     margin-bottom: 10px;
 }
 
 .text-row p {
-    font-size: 1.2rem;
+    font-size: 23px;
     line-height: 1.6;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 .hero-btn {
     display: inline-block;
     background-color: #af7c0f;
     color: white;
-    padding: 10px 20px;
+    padding: 15px 40px;
     text-decoration: none;
+    font-size: 120 px;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 8px;
     transition: background-color 0.3s ease;
 }
 
@@ -133,6 +140,14 @@ nav img {
 
     .text-row:first-child {
         margin-top: -120px;
+    }
+
+    .text-row h1 {
+        font-size: 60px;;
+    }
+
+    .text-row p {
+        font-size: 15px;
     }
 
     .text-row {
@@ -630,19 +645,71 @@ color: #fff
 
 
 /* Video section */
-/* .video {
-padding: 10px 0 40px;
+.video {
+/* padding: 10px 0 40px; */
+text-align: center;
+padding: 20px;
+background-color: #f9f9f9;
 }
 
-.video-content {
+/* .video-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+} */
+
+.video h2 {
+    font-size: 2rem;
+    /* Adjust heading size */
+    margin-bottom: 20px;
+    /* Add space below the heading */
+    color: #333;
+    /* Text color */
 }
 
-.video-preview {
 
-} */
+/* Styling the video */
+.video video {
+    width: 80%;
+    /* Make the video width 80% of the container */
+    max-width: 600px;
+    /* Set a maximum width for larger screens */
+    height: auto;
+    /* Keep aspect ratio */
+    border-radius: 10px;
+    /* Optional: Add rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Optional: Add shadow */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .video h2 {
+        font-size: 1.5rem;
+        /* Reduce font size on smaller screens */
+    }
+
+    .video video {
+        height: 20vh;
+        width: 100%;
+        /* Make the video take up more width on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .video h2 {
+        font-size: 1.2rem;
+        /* Further reduce heading size for smaller devices */
+    }
+
+    .video video {
+        width: 100%;
+        /* Make the video full width on very small screens */
+    }
+}
+
+
+/* Login and register section */
 
 .body
 {
