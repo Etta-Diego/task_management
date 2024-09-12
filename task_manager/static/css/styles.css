@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    /* color: #D1A952; */
 }
 
 
@@ -23,7 +24,7 @@ ul {
 .header {
     min-height: 100vh;
     width: 100%;
-    background: linear-gradient(to bottom, #5c3b00 12%, #af7c0f 4%, #dcbd7a 95%, #fff 100%);
+    background: linear-gradient(to bottom, #5c3b00 12%, #af7c0f 4%, #dcbd7a 95%, #dcbd7a 100%);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -252,6 +253,67 @@ nav .fa {
 }
 
 
+/* Video section */
+.video {
+    padding: 10px 0 40px;
+    text-align: center;
+    /* padding: 20px; */
+    background-color: #f9f9f9;
+}
+
+
+.video h2 {
+    font-size: 3rem;
+    margin-top: 100px;  
+    color: #333;
+}
+
+.video p {
+    /* margin-top: 10px; */
+    margin-bottom: 50px;
+    color: #D1A952;
+    font-size: 1.5rem;
+    margin-top: 43px;
+}
+
+
+/* Styling the video */
+.video video {
+    width: 80%;
+    max-width: 600px;
+    height: 80vh;
+    border-radius: 1000px;
+    /* Optional: Add rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Optional: Add shadow */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .video h2 {
+        font-size: 1.5rem;
+        /* Reduce font size on smaller screens */
+    }
+
+    .video video {
+        height: 20vh;
+        width: 100%;
+        /* Make the video take up more width on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .video h2 {
+        font-size: 1.2rem;
+        /* Further reduce heading size for smaller devices */
+    }
+
+    .video video {
+        width: 100%;
+        /* Make the video full width on very small screens */
+    }
+}
+
 
 /* features */
 
@@ -268,15 +330,16 @@ nav .fa {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 3rem;
     font-weight: 600;
+    margin-top: 26px;
 }
 
 p {
-    color: #b71515; /*#777 */
-    font-size: 14px;
+    color: #D1A952;; /*#777 */
+    font-size: 1.3rem;
     font-weight: 300;
-    line-height: 22px;
+    line-height: 1.2;
     padding: 10px;
 }
 
@@ -313,15 +376,15 @@ h3 {
 }
 
 
-/* Campus */
-.campus {
+/* we-serve */
+.we-serve {
     width: 80%;
     margin: auto;
     text-align: center;
     padding-top: 50px;
 }
 
-.campus-col {
+.we-serve-col {
     flex-basis: 32%;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -329,13 +392,13 @@ h3 {
     overflow: hidden;
 }
 
-.campus-col img {
+.we-serve-col img {
   width: 100%;
   display: block;
 }
 
 .layer {
-    background: rgba(226, 0, 0, 0.7);
+    background: rgb(209, 169, 82, 0.7);
     height: 50px;
     width: 100%;
     position: absolute;
@@ -344,14 +407,14 @@ h3 {
 }
 
 .layer:hover {
-    background: rgba(226, 0, 0, 0.7); 
+    background: rgb(209, 169, 82, 0.7);
 }
 
 .layer h3 {
     width: 100%;
     font-weight: 500;
     color: #fff;
-    font-size: 26px;
+    font-size: 1.2rem;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -387,7 +450,7 @@ h3 {
 }
 
 .choose-us-col p {
-    padding: o; 
+    padding: 0; 
 }
 
 .choose-us-col h3 {
@@ -471,27 +534,29 @@ h3 {
     }
 }
 
-/* footer */
-.footer {
+/* about */
+.about {
     width: 100%;
     text-align: center;
     padding: 30px 0;
 }
 
-.footer h4 {
+.about h4 {
     margin-bottom: 25px;
     margin-top: 20px;
     font-weight: 600;
     color: black;
+    font-size: 3rem;
 }
 
-.footer p {
+.about p {
     color: black;
-    font-size: 16px;
+    font-size: 1.3rem;
+    color: #D1A952;
 }
 
 
-.footer .hero-btn {
+.about .hero-btn {
     display: inline-block;
     text-decoration: none;
     color: black;
@@ -504,18 +569,172 @@ h3 {
     font-weight: bold;
 }
 
-.footer .hero-btn:hover {
+.about .hero-btn:hover {
     border: 1px solid coral;
     background: coral;
     transition: 1s;
 }
 
-.icons .fa {
+/* .icons .fa {
     color: #f44336;
     margin: 0 13px;
     cursor: pointer;
     padding: 18px 0;
+} */
+
+
+/* .footer .container {
+    max-width: 1170px;
+    margin: auto;
 }
+
+.footer .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer {
+    background-color: #242b25;
+    padding: 70px 0;
+}
+
+.footer-col {
+    width: 20%;
+    padding: 0 15px;
+}
+
+.footer-col .right {
+    margin-top: 103px;
+   /* margin-right: 3445px; */
+/* }
+
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #aed937;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+} */ 
+
+/* .footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+} */
+
+/* .footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+} */
+
+/*responsive*/
+@media(max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
+
+
+
+
+
+.footer {
+    background: linear-gradient(#D1A952, #CADC7A)
+}
+
+
+.footer .row {
+    background: rgb(45, 189, 45);
+    width: 80%;
+    margin: 4% auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer .col {
+    flex-basis: 25%;
+    text-align: center;
+}
+
+.footer .col img {
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.footer .col {
+    margin: 20px 0;
+}
+
+
+.footer .social-link a {
+    /* width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #000;
+    margin: 0 7px;
+    cursor: pointer; */
+    display: inline-block;
+    margin: 10px 20px;
+    /* top: 40%; */
+    /* right: 0; */
+    /* color:  */
+}
+
+
+
 
 
 /* About us page */
@@ -643,70 +862,6 @@ color: #fff
     }
 }
 
-
-/* Video section */
-.video {
-/* padding: 10px 0 40px; */
-text-align: center;
-padding: 20px;
-background-color: #f9f9f9;
-}
-
-/* .video-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
-
-.video h2 {
-    font-size: 2rem;
-    /* Adjust heading size */
-    margin-bottom: 20px;
-    /* Add space below the heading */
-    color: #333;
-    /* Text color */
-}
-
-
-/* Styling the video */
-.video video {
-    width: 80%;
-    /* Make the video width 80% of the container */
-    max-width: 600px;
-    /* Set a maximum width for larger screens */
-    height: auto;
-    /* Keep aspect ratio */
-    border-radius: 10px;
-    /* Optional: Add rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    /* Optional: Add shadow */
-}
-
-/* Responsive Styling */
-@media (max-width: 768px) {
-    .video h2 {
-        font-size: 1.5rem;
-        /* Reduce font size on smaller screens */
-    }
-
-    .video video {
-        height: 20vh;
-        width: 100%;
-        /* Make the video take up more width on mobile */
-    }
-}
-
-@media (max-width: 480px) {
-    .video h2 {
-        font-size: 1.2rem;
-        /* Further reduce heading size for smaller devices */
-    }
-
-    .video video {
-        width: 100%;
-        /* Make the video full width on very small screens */
-    }
-}
 
 
 /* Login and register section */
